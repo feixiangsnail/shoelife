@@ -1,0 +1,54 @@
+@import '../../../assets/css/preset.less';
+
+.shoeCategory {
+    .wrap {
+        width: 345rem/@w;
+        margin: 0 auto;
+    }
+    .wrap-item {
+        h3 {
+            margin: 20rem/@w 0;
+            font-size: 16rem/@w;
+            color: #131313;
+            line-height: 20rem/@w;
+            position: relative;
+            padding-left: 8rem/@w;
+            font-weight: bold
+        }
+        h3:after {
+            content: '';
+            width: 3rem/@w;
+            height: 15rem/@w;
+            background: #F5334A;
+            position: absolute;
+            left: 0;
+            top: 2rem/@w;
+        }
+        ul {
+            li {
+                width: 70rem/@w;
+                margin-right: 21rem/@w;
+                float: left;
+                div {
+                    width: 70rem/@w;
+                    height: 70rem/@w;
+                    background: #f4f4f4;
+                }
+                p {
+                    font-size: 12rem/@w;
+                    color: #616161;
+                    padding: 5rem/@w 0 20rem/@w 0;
+                    line-height: 20px;
+                    text-align: center;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+            li:nth-of-type(4n) {
+                margin-right: 0;
+            }
+        }
+    }
+    .bt{ border-bottom: 0.5rem/@w solid #E1E1E1;}
+}

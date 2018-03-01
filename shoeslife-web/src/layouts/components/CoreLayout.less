@@ -1,0 +1,449 @@
+@menu-bar-width: 250px;
+.logo {
+  width: @menu-bar-width;
+  height: 68px;
+  line-height: 66px;
+  padding-left: 24px;
+  margin-bottom: -1px;
+  float: left;
+  background-color: #f5334a
+}
+
+.corelayout {
+  height: calc(~"100%");
+}
+
+.aside {
+  padding-top: 66px;
+  height: calc(~"100%" - 1px);
+
+}
+.customMenu{
+    background: #263238;
+    color: rgba(163,175,183,.9);
+}
+.customSubMenu {
+    background: #242f35;
+}
+.sider {
+  width: 250px;
+  background: #263238;
+  position: fixed;
+  overflow: auto;
+  padding-bottom: 24px;
+  height: calc(~"100%" - 66px);
+}
+
+.header {
+  background: #fff;
+  border: none;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .08);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .08);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 1px solid #e4eaec;
+}
+
+.breadcrumb {
+  padding: 24px;
+}
+
+.container {
+  margin-left: 250px;
+  position: relative;
+  min-height: calc(~'100%' - 64px);
+  min-width: 1280px;
+  overflow: auto;
+}
+
+.footer {
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  background: #616161;
+  border-top: 1px solid #e9e9e9;
+  width: 100%;
+}
+
+.site-menubar-footer {
+  width: @menu-bar-width;
+}
+
+/*:global {
+  .ant-menu-dark.ant-menu-inline {
+    .ant-menu-item {
+      padding: 0;
+      margin-left: -48px;
+      a {
+        padding: 0 16px 0 48px;
+      }
+    }
+  }
+  .col-.noItem .ant-form-item{
+    margin-bottom: 0;
+  }
+}*/
+:global {
+  .ant-upload-list-item-single{
+    .ant-upload-list-item{
+        display:none !important;
+    }
+    .ant-upload-list-item:last-child{
+        display:block !important;
+    }
+  }
+  .panel-head {
+    background: #fbfbfb;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  iframe{
+    border: 0px;
+  }
+  .tit-table {
+    font-size: 14px;
+    line-height: 3em;
+    font-weight: 600;
+    color: #76838f;
+  }
+  .fr {
+    float: right;
+  }
+  .tc {
+    text-align: center;
+  }
+  //文本超长截取
+  .textOverflow span.labelOverflow {
+    display: block;
+    float: left;
+    width: 65px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .textOverflow .ant-checkbox-wrapper span + span {
+    display: block;
+    float: right;
+    width: 117px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .page-header {
+    padding: 15px 30px;
+  }
+  .row{
+    margin:0px;
+  }
+  .page-content{
+      padding:0px 30px
+  }
+  .site-menu-horizontal {
+    .ant-menu-submenu-horizontal.ant-menu-submenu {
+      padding-top: 10px;
+    }
+    > .ant-menu-horizontal {
+      border-bottom: none;
+      .ant-menu-submenu-title {
+        span {
+          line-height: 20px;
+          display: inline-block;
+          .anticon {
+            display: block;
+            width: 100%;
+            font-size: 20px;
+            line-height: 1;
+            margin: 2px 0 4px;
+          }
+
+        }
+      }
+      .ant-menu-sub {
+        min-width: 160px;
+      }
+    }
+  }
+  //连接时间格式之间
+  .ant-form-split {
+    display: inline-block;
+    padding: 0 10px;
+  }
+  //搜索样式
+  .search-box {
+    & .ant-calendar-range-picker.ant-input {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+  //弹出层内的样式---操作返回结果提示
+  .modalResult {
+    max-height: 320px;
+    overflow-y: scroll;
+  }
+
+  .col- .border-top {
+    border-top: 1px solid #e4eaec;
+    padding-top: 25px;
+  }
+
+  //帐号管理中 密码显示问题
+  .col-.noItem .ant-form-item {
+    margin-bottom: 0;
+  }
+  .afterInput .ant-form-item-control {
+    line-height: 32px;
+    display: inline-flex;
+  }
+  .ant-menu-dark.ant-menu-inline .ant-menu-item-selected {
+    border-right: 0;
+    background-color: #2db7f5;
+    color: #fff;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+
+  // 稍微修改了一些
+
+  .image-gallery-left-nav::before,
+  .image-gallery-right-nav::before {
+    display: inline-block;
+    font-family: "anticon"; // 字体改为antd的, 否则还要引入额外的字体文件
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .image-gallery {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .image-gallery-content {
+    position: relative;
+    line-height: 0;
+    top: 0;
+  }
+
+  .image-gallery-slide-wrapper {
+    position: relative;
+  }
+
+  .image-gallery-slide-wrapper.left, .image-gallery-slide-wrapper.right {
+    display: inline-block;
+    width: calc(100% - 113px);
+  }
+
+  // 这个应该是缩放时为了自适应吧, 不知道可不可以删掉
+  @media (max-width: 768px) {
+    .image-gallery-slide-wrapper.left, .image-gallery-slide-wrapper.right {
+      width: calc(100% - 84px);
+    }
+  }
+
+  .image-gallery-left-nav,
+  .image-gallery-right-nav {
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    z-index: 4;
+  }
+
+  .image-gallery-left-nav::before,
+  .image-gallery-right-nav::before {
+    color: #fff;
+    line-height: .7;
+    text-shadow: 0 2px 2px #1a1a1a;
+    transition: color .2s ease-out;
+  }
+
+  .image-gallery-left-nav:hover::before,
+  .image-gallery-right-nav:hover::before {
+    color: #337ab7;
+  }
+
+  @media (max-width: 768px) {
+    .image-gallery-left-nav:hover::before,
+    .image-gallery-right-nav:hover::before {
+      color: #fff;
+    }
+  }
+
+  .image-gallery-left-nav,
+  .image-gallery-right-nav {
+    color: #fff;
+    font-size: 3em;
+    padding: 50px 3px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .image-gallery-left-nav[disabled],
+  .image-gallery-right-nav[disabled] {
+    cursor: disabled;
+    opacity: .6;
+    pointer-events: none;
+  }
+
+  @media (max-width: 768px) {
+    .image-gallery-left-nav,
+    .image-gallery-right-nav {
+      font-size: 3.4em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-gallery-left-nav,
+    .image-gallery-right-nav {
+      font-size: 2.4em;
+    }
+  }
+
+  .image-gallery-left-nav {
+    left: 0;
+  }
+
+  .image-gallery-left-nav::before {
+    content: "\E601";
+  }
+
+  .image-gallery-right-nav {
+    right: 0;
+  }
+
+  .image-gallery-right-nav::before {
+    content: "\E600";
+  }
+
+  .image-gallery-slides {
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .image-gallery-slide {
+    background: #fff;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .image-gallery-slide.center {
+    position: relative;
+  }
+
+  .image-gallery-slide img {
+    width: 100%;
+  }
+
+  .image-gallery-slide .image-gallery-description {
+    background: rgba(0, 0, 0, 0.4);
+    bottom: 70px;
+    color: #fff;
+    left: 0;
+    line-height: 1;
+    padding: 10px 20px;
+    position: absolute;
+    white-space: normal;
+  }
+
+  @media (max-width: 768px) {
+    .image-gallery-slide .image-gallery-description {
+      bottom: 45px;
+      font-size: .8em;
+      padding: 8px 15px;
+    }
+  }
+
+  .image-gallery-bullets {
+    bottom: 20px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 80%;
+    z-index: 4;
+  }
+
+  .image-gallery-bullets .image-gallery-bullets-container {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .image-gallery-bullets .image-gallery-bullet {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 0 #1a1a1a;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px;
+    outline: none;
+    padding: 5px;
+  }
+
+  @media (max-width: 768px) {
+    .image-gallery-bullets .image-gallery-bullet {
+      margin: 0 3px;
+      padding: 3px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-gallery-bullets .image-gallery-bullet {
+      padding: 2.7px;
+    }
+  }
+
+  .image-gallery-bullets .image-gallery-bullet.active {
+    background: #337ab7;
+  }
+
+  .image-gallery-index {
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    line-height: 1;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 4;
+  }
+
+  @media (max-width: 768px) {
+    .image-gallery-index {
+      font-size: .8em;
+      padding: 5px 10px;
+    }
+  }
+
+
+}

@@ -1,0 +1,471 @@
+
+
+.left{
+  width: 50%;
+  max-width:599px;
+  display:inline-block;
+}
+.right{
+  width:48%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left:20px;
+
+}
+:global {
+  .uploadImage{
+    height: 28px;
+  }
+  .demoNav{
+    line-height: 38px;
+    margin-top: 15px;
+    padding-left: 15px;
+    font-size: 16px;
+    background: #f8f8f8;
+    .upload-list-inline.upload-fixed{
+      float:right;
+      display:inline-block;
+      .ant-btn.ant-btn-ghost{
+        border:0px;
+      }
+      .ant-upload-list-item.ant-upload-list-item-done{
+          position: absolute;
+          background: #fff;
+          z-index: 99;
+          display:none;
+      }
+      .ant-upload-list.ant-upload-list-picture{
+        background: #fff;
+        position: absolute;
+        z-index: 99;
+      }
+    }
+  }
+  .pre{
+    height: 350px;
+    width:100%;
+  }
+  .exhibition{
+    position:absolute;
+    right: 7px;
+    z-index: 12;
+    margin-top: 15px;
+  }
+  .model-view{
+    border:1px solid #e9e9e9;
+    margin-top:15px;
+    border-radius: 5px;
+    position:relative;
+    .modeAdd{
+      border-right: 0px;
+      border-left: 0px;
+      border-bottom: 0px;
+      border-radius: 0px 0px 5px 5px;
+    }
+    .ant-card.ant-card-bordered:hover{
+        box-shadow:0 0 0 2px rgba(255,255,255,.4);
+    }
+    .material-second{
+      line-height: 20px;
+      display:block;
+    }
+    .ant-card.ant-card-bordered{
+        overflow: auto;
+    }
+    .ant-card-body{
+      max-height:350px;
+    }
+    .material-all{
+      .material-no{
+        font-size:15px;
+        text-align: center;
+      }
+      .material-map{
+        .ant-col-2{
+            min-width:50px;
+        }
+        .money{
+          margin-left:12px;
+          text-align: left;
+          .anticon-edit,.anticon-check,.anticon-cross{
+            margin-left:6px;
+          }
+        }
+        text-align: center;
+      }
+      .ant-card-body{
+        padding: 5px 15px 5px 5px;
+        width:685px;
+        .ant-col-4{
+          height:36px;
+          line-height: 36px;
+        }
+        .ant-col-5{
+          line-height: 36px;
+          height:36px;
+        }
+      }
+      .ant-card-head{
+        height: 34px;
+        line-height: 36px;
+      }
+      .ant-card-extra{
+        top:7px;
+      }
+      .ant-card-head-title{
+        font-size: 12px;
+      }
+      .material-icon{
+        position:relative;
+        height:65px;
+        img{
+          width: 44px;
+          border:1px solid #ccc;
+          border-radius: 3px;
+          &.on{
+            border-color: #f50;
+            box-shadow: 0 0 0 2px rgba(255,85,0,.4);
+          }
+        }
+        .silent,.push,.alreadyLaid{
+          position: absolute;
+          top: 1px;
+          right: 6px;
+          color: #fff;
+          line-height: 12px;
+        }
+        .silentAndpush .silent{
+            right:18px;
+        }
+        .alreadyLaid{
+          background:#ccc;
+        }
+        .push{
+          background: #2db7f5;
+        }
+        .silent{
+          background:#f50;
+        }
+        text-align: center;
+        span{
+          display:block;
+          max-height: 16px;
+          line-height: 24px;
+        }
+      }
+      .ant-row{
+        line-height: 44px;
+        margin-bottom: 12px;
+      }
+      .ant-input-number.ant-input-number-sm{
+        width:100%;
+      }
+    }
+    .console{
+      padding-top:15px;
+      border-top:1px solid #e9e9e9;
+      .ant-row{
+        text-align: center;
+        .ant-input-number-sm{
+          width:100%
+        }
+        .ant-slider{
+          margin:3px;
+        }
+        .mr-b{
+          margin-bottom:6px;
+        }
+      }
+      .texture,.all,.spotlight,.parallel-light{
+        padding-bottom:12px;
+        .describe{
+            text-align: left;
+            padding-left: 14px;
+        }
+        input[type="color"]{
+          padding:0px;
+        }
+        div{
+          line-height: 22px;
+       }
+      }
+    }
+  }
+  .ant-card-head-title{
+    font-weight: bold;
+  }
+  .ant-tree-title{
+      font-size:15px;
+  }
+  .ant-tree{
+    padding-left:20px;
+  }
+  .tree-custom{
+    margin-top: 20px;
+    min-height:130px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    li{
+      position:relative;
+      .ant-edit{
+        height:27px;
+        line-height: 27px;
+        display:inline-block;
+        vertical-align: bottom;
+        .edit-input{
+          width: 102px;
+          display:inline-block;
+          margin-right:12px;
+        }
+        .edit-input-icon{
+          display:inline-block;
+          .anticon{
+            margin-right:12px;
+          }
+        }
+      }
+      .set-default{
+        .ant-radio-wrapper{
+          margin-top: 5px;
+          vertical-align: top;
+        }
+      }
+      &.piece{
+        padding-bottom: 26px;
+        min-height:97px;
+      }
+      &:last-child{
+        padding-bottom:0px;
+      }
+      .ant-upload-list-item-name{
+        display:none;
+      }
+      .ant-upload-list-item-info{
+        width:50px;
+      }
+      margin:2px 20px 0px 15px;
+      font-size:15px;
+      min-height:24px;
+      span{
+        cursor: pointer;
+        font-size:12px;
+      }
+      .ant-dropdown-link{
+        position: absolute;
+        left: 50%;
+      }
+
+      li{
+        line-height: 28px;
+        padding-left:30px;
+        &.on{
+          .name{
+              color: #f50;
+          }
+          background:#f9f9f9;
+        }
+        .ant-tag-text{
+          margin:0px;
+          height:19px;
+          line-height: 20px;
+        }
+        .materials{
+          a{
+            left: 37%;
+          }
+          img{
+            width:100%;
+          }
+        }
+        .anticon-eye-o,.anticon-eye{
+          right:-35px;
+        }
+        li{
+          .anticon-eye-o,.anticon-eye{
+            right:-55px;
+          }
+        }
+      }
+
+      .ant-upload-list-item-single{
+        .ant-upload-list-item{
+          display:none;
+        }
+        .upload-fixed{
+            display:inline-block;
+            .ant-upload-list-item{
+              border:0px;
+              padding:0px;
+              margin:0px;
+              position: relative;
+              z-index: 111;
+              background: #fff;
+                img{
+                    width: 38px;
+                    height: 38px;
+                    margin-left: 15px;
+                }
+            }
+        }
+      }
+
+      .anticon-edit{
+        display:none;
+        padding-left:6px;
+      }
+      .anticon-edit:hover,.anticon-eye-o:hover,.anticon-eye:hover{
+        color:#2db7f5;
+      }
+      .anticon-eye-o,.anticon-eye{
+        position:absolute;
+        right:-15px;
+        margin-top: 5px;
+        font-size: 18px;
+      }
+      .name{
+        display:inline-block;
+        height:24px;
+        .ant-btn-ghost{
+          display:none;
+        }
+
+        &:hover{
+          .anticon-edit,.ant-btn-ghost{
+            display: inline-block;
+          }
+
+        }
+         .upload-fixed{
+              display: inline-block;
+              margin-left: 6px;
+              line-height: 27px;
+          }
+        .ant-btn-ghost{
+          border:0px;
+          padding: 0 6px;
+        }
+        .upload-list-inline.upload-fixed{
+          font-size: 12px;
+          vertical-align: middle;
+        }
+
+      }
+
+    }
+
+    .tree-hide{
+        li{
+          display:none;
+        }
+        .upload-list-inline.upload-fixed{
+          display:none;
+        }
+        .anticon-caret-down{
+          display:none;
+        }
+        .anticon-caret-right{
+          display:inline-block;
+        }
+    }
+    .operation{
+      float:right;
+    }
+    .file-effect{
+      font-size: 12px;
+      color: #06c;
+      vertical-align: text-bottom;
+    }
+  }
+  .anticon-caret-down:before,.anticon-caret-right:before{
+    font-size:12px;
+    padding-right:12px;
+    cursor: pointer;
+  }
+  .anticon-caret-right{
+    display:none;
+  }
+  .materials-related{
+    margin-bottom:14px;
+    .ant-col-3{
+      text-align: center;
+      margin: 0 8px 8px;
+      .on{
+        border-color: #f50;
+        box-shadow: 0 0 0 2px rgba(255,85,0,.4);
+      }
+      span{
+        display: inline-block;
+        margin-top: 6px;
+      }
+    }
+    .ant-col-24{
+      margin-bottom: 12px;
+    }
+    img{
+      width:100%;
+    }
+    .user-up{
+      position: absolute;
+      left:180px;
+      top:3px;
+    }
+  }
+  .material-row{
+    display:block;
+    margin: 29px 0px 10px;
+    &:hover{
+      box-shadow:0 0 0 2px rgba(255,255,255,.4);
+    }
+    .info{
+      position:relative;
+      height:125px;
+      font-size:14px;
+      line-height: 18px;
+      .material-name{
+        padding-top:6px;
+      }
+      .second-name{
+        position:absolute;
+        top:53px;
+      }
+      .money{
+        position:absolute;
+        bottom:6px;
+      }
+      .anticon-edit,.anticon-check,.anticon-cross{
+        margin-left:8px;
+        cursor: pointer;
+      }
+
+    }
+    .buts{
+      margin-top: 12px;
+      text-align: center;
+    }
+    .files{
+      padding: 0px 10px;
+      .ant-upload-list-item{
+        width:66px;
+        display:none
+      }
+      .anticon-cross{
+        position:absolute;
+        top:13px;
+      }
+      text-align: center;
+    }
+     img{
+       width:100%;
+     }
+     .ant-col-24{
+
+       .money{
+         color:#f50;
+       }
+     }
+  }
+
+}

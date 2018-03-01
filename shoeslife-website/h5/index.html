@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="wap-font-scale" content="no">
+    <title>申请成为时尚主编</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script type="text/javascript" src="js/lib/jQuery.js"></script>
+    <script type="text/javascript">
+        function replayEditor() {
+            if (!toVaild__()) {
+                return;
+            }
+            var json_data = JSON.stringify({
+                userName: $("#name").val(),
+                mobile: $("#phone").val(),
+                wachat: $("#wx").val(),
+                selfProfile: $("#neirong").val()
+            });
+            $.ajax({
+                url: "/users/common/editor/applay/add",
+                data: json_data,
+                method: "POST",
+                type: 'json',
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function (data) {
+                    if (data.returncode == 0) {
+                        try {
+                            window.webkit.messageHandlers.done.postMessage(null);
+                        } catch (e) {
+                            try {
+                                JSInterface2.javaFunction("true");
+                            } catch (e) {
+                                document.write('<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="wap-font-scale" content="no"><title></title></head><body><div align="center" style="padding-top: 20%;" ><div align="center"><img alt="" src="images/success-replay-img.svg"></div><div style="text-align: center;font-family:Arial;font-size: 18px;padding-top:10%;">' + data.message + '</div></div></body></html>');
+                            }
+                        }
+                    } else {
+                        alert(data.message);
+                    }
+                },
+                error: function (msg) {
+                    console.log(msg)
+                }
+            })
+        }
+
+        function toVaild__() {
+
+            var val2 = $("#name").val();
+            if (val2.length < 3) {
+                alert("昵称不能小于3个字符!");
+                return false;
+            } else if (val2.length > 20) {
+                alert("昵称不能大于15个字符!");
+                return false;
+            }
+            var val = $("#phone").val();
+            if (!/^1\d{10}$/.test(val)) {
+                alert("请输入正确的手机号码!");
+                return false;
+            }
+            ;
+            var val3 = $("#wx").val();
+            if (val3.length < 1) {
+                alert("微信或邮箱不能为空！");
+                return false;
+            }
+            var val4 = $("#neirong").val();
+            if (val4.length < 10) {
+                alert("个人简介不能小于10个字符!");
+                return false;
+            } else if (val4.length > 150) {
+                alert("个人简介不能大于150个字符!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+<div class="banner">
+    <img src="images/banner2x.jpg">
+</div>
+<div class="bitb"></div>
+<div class="titleb"></div>
+<div class="title1">
+    发挥您的专长, 结识时尚菁英, 体现自我价值
+</div>
+<div class="title2">如果您是时尚达人, 美鞋控</div>
+<div class="title3">鞋生活，诚邀您加入</div>
+<div class="title4">加入后您将得到</div>
+<div class="menu">
+    <!-- 菜单选项 -->
+    <a href="">
+        <div class="menu_bu fl">
+            <div class="menu_img">
+                <img src="images/icon_vip.svg">
+            </div>
+            <div class="menu_text">超级VIP</div>
+        </div>
+    </a>
+    <!-- 菜单选项 -->
+    <a href="">
+        <div class="menu_bu fl">
+            <div class="menu_img">
+                <img src="images/icon_copywriter.svg">
+            </div>
+            <div class="menu_text">约稿</div>
+        </div>
+    </a>
+    <!-- 菜单选项 -->
+    <a href="">
+        <div class="menu_bu fl">
+            <div class="menu_img">
+                <img src="images/icon_cash.svg">
+            </div>
+            <div class="menu_text">现金报酬</div>
+        </div>
+    </a>
+    <!-- 菜单选项 -->
+    <a href="">
+        <div class="menu_bu fl">
+            <div class="menu_img">
+                <img src="images/icon_interview.svg">
+            </div>
+            <div class="menu_text">人物专访</div>
+        </div>
+    </a>
+    <!-- 菜单选项 -->
+    <a href="">
+        <div class="menu_bu fl">
+            <div class="menu_img">
+                <img src="images/icon_activity.svg">
+            </div>
+            <div class="menu_text">线下活动</div>
+        </div>
+    </a>
+    <!-- 菜单选项 -->
+    <a href="">
+        <div class="menu_bu fl">
+            <div class="menu_img">
+                <img src="images/icon_promoteCode.svg">
+            </div>
+            <div class="menu_text">推荐奖励</div>
+        </div>
+    </a>
+    <!-- 菜单选项 -->
+    <a href="">
+
+        <div class="menu_bu fl">
+            <div class="menu_img">
+                <img src="images/icon_charming.svg">
+            </div>
+            <div class="menu_text">个人魅力</div>
+        </div>
+    </a>
+    <!-- 菜单选项 -->
+    <a href="">
+        <div class="menu_bu fl">
+            <div class="menu_img">
+                <img src="images/icon_surprise.svg">
+            </div>
+            <div class="menu_text">更多惊喜</div>
+        </div>
+    </a>
+</div>
+<div class="clear"></div>
+<div class="fo_title">请填写申请资料</div>
+<div class="pform">
+    <!-- 提交表单 -->
+    <form action="#" method="post" onsubmit="return toVaild()">
+        <div class="pinput">
+            <span class="pinput_l">昵称</span>
+            <input type="text" name="userName" class="pinput_r" id="name" value="">
+        </div>
+        <div class="pinput">
+            <span class="pinput_l">手机号</span>
+            <input type="text" name="mobile" placeholder="+86" class="pinput_r" id="phone" value="">
+        </div>
+        <div class="pinput">
+            <span class="pinput_l">微信/邮箱</span>
+            <input type="text" name="wachat" class="pinput_r" id="wx" value="">
+        </div>
+        <div>
+            <div class="ptexta">个人简介</div>
+            <textarea name="selfProfile" class="ptext_n" placeholder="请描述您的职业以及专长" id="neirong"></textarea>
+        </div>
+        <div onclick="replayEditor()">
+            <button type="button" value="" class="pinput_t" style="color:#FFFFFF;">提交申请</button>
+        </div>
+    </form>
+    <!--  -->
+</div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+@import '../../../assets/css/preset.less';
+  #shoeDetail{
+      //轮播
+      width: 375rem/@w;
+      overflow: hidden;
+      .carousel{position: relative;
+          height: 375rem/@w;
+          .mint-swipe-indicator{background: #fff;opacity:1;}
+          .mint-swipe-indicators .is-active{background: #F5334A !important;}
+        .item{height: 375rem/@w;width:375rem/@w;margin:0 auto;}
+        .video{width: 44rem/@w;height:33rem/@w;border-radius: 4.4rem/@w;
+          position: absolute;right:15rem/@w;top:16rem/@w;overflow: hidden;
+          .mark{width: 44rem/@w;height:33rem/@w;background: rgba(0,0,0,.5);
+            position: absolute;top:0;left:0;
+            img{height: 18rem/@w;width:17rem/@w;margin: 7rem/@w 13rem/@w;}
+          }
+        }
+        .video-wrap{width: 375rem/@w;margin: 0 auto;height: auto;position: fixed;z-index: 99;
+          top:50%;left: 50%;transform: translate(-50%,-50%);
+          video{width: 375rem/@w;height: auto;}
+        }
+      }
+      .intro{
+        padding-bottom: 16rem/@w;
+        h2{font-size: 16rem/@w;line-height: 22rem/@w;font-weight: bolder;
+          padding: 20rem/@w 15rem/@w 10rem/@w;}
+        div{
+          padding-left:15rem/@w;
+          padding-right: 15rem/@w;
+          margin-right: -8rem/@w;
+          .price{float:left;display: block;line-height:27rem/@w;font-size: 16rem/@w;color:#616161; }
+          .hits{
+            float:right;
+            i{display:block;height: 25rem/@w;width:25rem/@w;float: left;overflow: hidden;
+               border: 1.2rem/@w solid #fff;border-radius: 50%;margin-left: -12rem/@w;}
+            span{font-size: 12rem/@w;color:#616161;vertical-align: middle;
+              padding-left: 5rem/@w;line-height: 27rem/@w;display:block;float: left}
+
+          }
+        }
+      }
+      .recommend-design{
+        .shoe-class{
+          width: 100%;
+          overflow-x: auto;
+          overflow-y: hidden;
+          ul{
+            padding:0 15rem/@w 20rem/@w;
+            li{float:left;margin-right:10rem/@w;width: 98rem/@w;height: 98rem/@w;border:1px solid #e1e1e1;}
+            li:last-of-type{margin-right: 0;}
+          }
+        }
+      }
+      .designer{
+          padding-bottom: 20rem/@w;
+          .info{
+            width: 345rem/@w;height: 80rem/@w;background: #f6f6f6;margin:0 auto;
+            .pic img{height:50rem/@w;width:50rem/@w;border-radius: 50%;padding: 15rem/@w;
+              float: left;overflow: hidden;}
+            .txt{float:left;
+                h4{font-size: 14rem/@w;color:#131313;line-height: 20rem/@w;
+                  padding-top: 15rem/@w;padding-bottom: 13rem/@w;width: 250rem/@w;}
+                p{line-height: 17rem/@w;color:#9b9b9b;font-size: 12rem/@w;
+                  span{vertical-align: middle}
+                  i{margin:0 10rem/@w; width:1rem/@w;vertical-align: middle;
+                    background:#9b9b9b;height: 12rem/@w;display: inline-block;}
+                }
+            }
+          }
+      }
+      .shoe-detail{
+        h3{
+          padding-bottom: 5rem/@w;
+        }
+        div{
+          margin-bottom: 15rem/@w;
+          img{width: 100%;height: auto;}
+        }
+
+      }
+      .footer{
+          position: fixed;bottom: 0;
+        li{float:left;width: 125rem/@w;height:49rem/@w;line-height: 49rem/@w;
+          text-align: center;font-size: 16rem/@w;
+        }
+        li:first-of-type{background: #fff;font-size: 10rem/@w;color:#616161;
+          i{display:block;height: 20rem/@w;width: 20rem/@w;background: url("../../../assets/img/icon-collect.png") no-repeat;
+            background-size: 20rem/@w;margin: 7rem/@w auto 4rem/@w;}
+          p{line-height: 12rem/@w;}
+          .collect{background-image: url("../../../assets/img/icon-collect1.png")}
+        }
+        li:nth-of-type(2){color:#F5334A;background: #FFE4E9;}
+        li:last-of-type{background: #F5334A;a{color:#fff;}}
+      }
+    h3{line-height: 62rem/@w;font-size: 16rem/@w;color:#131313;position: relative;font-weight: bolder;
+      padding-left: 28rem/@w;}
+    h3:after{content: '';position:absolute;top:24rem/@w;left:15rem/@w;width: 3rem/@w;height:15rem/@w;
+      background: #f5334a;}
+    .bt{ border-bottom: 1px #e1e1e1 solid;}
+      .pt50{padding-bottom: 49rem/@w;}
+
+  }

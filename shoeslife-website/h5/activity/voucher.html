@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="wap-font-scale" content="no">
+    <script type="text/javascript" src="../js/lib/jquery.1.7.2.min.js"></script>
+    <script type="text/javascript" src="../js/lib/jquery.prompt.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/css.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/jquery.prompt.css"/>
+    <script type="text/javascript" src="../js/wxShare.js"></script>
+    <script type="text/javascript" src="../js/voucher.js"></script>
+    <title>有妳，婚礼才完美</title>
+</head>
+<body style="background: #fff;overflow-x: hidden;">
+<div id="description" style="display: none">我们结婚吧，浪漫婚鞋推荐...</div>
+<div class="v_banner">
+    <img src="../images/header.jpg" alt="">
+</div>
+<div class="v_warning" style="display: none">
+    <div class="v_warning_pic">
+        <img src="../css/icon-warning.svg" alt="">
+    </div>
+    <span class="v_warning_infor"></span>
+    <a class="btn btn_color btn_position" href="javascript:;" id="toOpen">打开鞋生活APP</a>
+</div>
+<div class="v_success" style="display: none">
+    <h4>恭喜你领到</h4>
+    <div class="v_success_pic">
+        <img src="../css/v_388.jpg" alt="">
+    </div>
+    <div class="v_success_infor">已经放入你的账号 <span></span></div>
+    <a class="btn btn_color btn_position" href="javascript:;" id="toUse">立即使用</a>
+</div>
+<div class="v_form v_sub" style="display: none">
+    <h4>现在登记 领取388元</h4>
+    <div class="v_mob btn btn_gray">
+        <img src="../css/v_mod.svg" alt="">
+        <input type="tel" placeholder="请输入手机号码">
+        <button class="v_sent">
+            | 获取验证码
+        </button>
+    </div>
+    <div class="v_code btn btn_gray">
+        <img src="../css/v_code.svg" alt="">
+        <input type="tel" placeholder="请输入验证码">
+    </div>
+    <a class="btn btn_color btn_position" href="javascript:;" id="toLogin">立即领取</a>
+</div>
+<div class="v_form v_get">
+    <h4>现在登记 领取388元</h4>
+    <a class="btn btn_color is_login_position" href="javascript:;">立即领取</a>
+</div>
+<div  class="v_message">
+    <div class="top">
+        <div class="title">
+            <img src="../images/voucher_til1.png" alt="">
+        </div>
+        <div class="video_">
+            <video src="../media/v_video.mp4"  webkit-playsinline="true"></video>
+            <div class="playBtn">
+                <img src="../images/playBtn.svg" alt="">
+            </div>
+            <div class="poster">
+                <img src="../images/v_bj.jpg">
+            </div>
+            <div class="mod"></div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="clearFix of">
+            <div class="top ri of">
+                <div class="decorate">
+                    <img src="../images/decorate.png" alt="">
+                </div>
+                <div class="xuhao ri">
+                    <img src="../images/v_01.svg">
+                </div>
+            </div>
+        </div>
+
+        <div class="mid of">
+            <img src="../images/v_01.jpg" alt="">
+        </div>
+        <div class="bot">
+            <div class="wrap of">
+                <h3>IN THE NAME OF LOVE</h3>
+                <p>「以爱之名，此刻起我们将属于彼此，直到海枯山移之时，直到太阳西起东落的那一天。」</p>
+                <a href="javascript:;" id="95">开始设计</a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="top clearFix of">
+            <div class="decorate">
+                <img src="../images/decorate.png" alt="">
+            </div>
+            <div class="xuhao">
+                <img src="../images/v_02.svg">
+            </div>
+        </div>
+        <div class="mid midR of">
+            <img src="../images/v_02.jpg" alt="">
+        </div>
+        <div class="bot botL">
+            <div class="wrap of">
+                <h3>GRAVITY</h3>
+                <p>时间和空间都无法拆散我们，因为不消眨眼之间，这股神奇的引力总是将我们拉在一起，世界的奥秘，唯有引力与爱不可辜负。</p>
+                <a href="javascript:;" id="94">开始设计</a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="clearFix of">
+            <div class="top ri of">
+                <div class="decorate">
+                    <img src="../images/decorate.png" alt="">
+                </div>
+                <div class="xuhao ri">
+                    <img src="../images/v_03.svg">
+                </div>
+            </div>
+        </div>
+        <div class="mid of">
+            <img src="../images/v_03.jpg" alt="">
+        </div>
+        <div class="bot">
+            <div class="wrap of">
+                <h3>HEART BREAKER</h3>
+                <p>那些都是我伤过的男孩子的心，不过请你放心，从今以后我只对你一人用心。</p>
+                <a href="javascript:;" id="90">开始设计</a>
+            </div>
+        </div>
+    </div>
+    <div class="item item4">
+        <div class="top clearFix of">
+            <div class="decorate">
+                <img src="../images/decorate.png" alt="">
+            </div>
+            <div class="xuhao">
+                <img src="../images/v_04.svg">
+            </div>
+        </div>
+        <div class="mid midR of">
+            <img src="../images/v_04.png" alt="">
+        </div>
+        <div class="bot botL">
+            <div class="wrap of">
+                <h3>BELIEVER</h3>
+                <p>是你让她相信爱情，相信婚姻，纵使有种种诱因，种种挑衅，种种不该爱的理由。</p>
+                <a href="javascript:;" id="88">开始设计</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div  class="v_shoes">
+    <div class="show of">
+        <img src="../images/v_26m.gif" alt="">
+    </div>
+</div>
+<div  class="v_bot">
+    <ul class="clearFix of">
+        <li>
+            <div class="icon">
+                <img src="../images/v_botIcon1.svg">
+            </div>
+            <p>亲手设计婚鞋</p>
+        </li>
+        <li>
+            <div class="icon">
+                <img src="../images/v_botIcon2.svg">
+            </div>
+            <p>刻上爱情印记</p>
+        </li>
+        <li>
+            <div class="icon">
+                <img src="../images/v_botIcon3.svg">
+            </div>
+            <p>纯手工打造</p>
+        </li>
+    </ul>
+    <div class="boot">
+        <p>妳想拥有属于自己的婚鞋吗？</p>
+        <a href="javascript:;">我来设计</a>
+        <span></span>
+        <div class="bot_logo">
+            <img src="../images/v_logo.svg" alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>

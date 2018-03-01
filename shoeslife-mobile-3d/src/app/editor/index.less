@@ -1,0 +1,164 @@
+@import '../../assets/css/preset.less';
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#designerHome {
+    .header {
+        .wrap {
+            position: relative;
+            height: 122rem/@w;
+            overflow: hidden;
+            .topbg {
+                height: 200%;
+                -webkit-filter: blur(18rem/@w);
+                filter: blur(18rem/@w);
+                position: absolute;
+                top: -20%;
+                left: -10%;
+                width: 120%;
+                z-index: -1;
+            }
+            .content {
+                /*background: rgba(255,255,255,.1);*/
+                width: 100%;
+                height: 122rem/@w;
+            }
+        }
+        .intro {
+            text-align: center;
+            border-bottom: 9.5rem/@w solid #f7f7f7;
+            margin-top: -36rem/@w;
+            .head-img {
+                height: 65rem/@w;
+                width: 65rem/@w;
+                border: 2rem/@w solid #fff;
+                border-radius: 50%;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            h3 {
+                padding: 8rem/@w 0;
+                font-weight: bolder;
+                font-size: 16rem/@w;
+                color: #131313;
+                line-height: 23rem/@w;
+            }
+            .hits {
+                line-height: 20rem/@w;
+                margin-bottom: 10rem/@w;
+                font-size: 14rem/@w;
+                color: #9b9b9b;
+            }
+            .follow {
+                margin: 0 auto;
+                vertical-align: middle;
+                width: 110rem/@w;
+                height: 26rem/@w;
+                line-height: 26rem/@w;
+                font-size: 12rem/@w;
+                border-radius: 4rem/@w;
+                i {
+                    display: inline-block;
+                    font-size: 18rem/@w;
+                    font-style: normal;
+                    vertical-align: top;
+                    padding: 0 4rem/@w;
+                }
+            }
+            .isActive{
+                border:1rem/@w solid #22bcb8;
+                color:#22bcb8;
+            }
+            .notActive{
+                border:1rem/@w solid #9B9B9B;
+                color:#9B9B9B;
+            }
+            .int {
+                padding: 10rem/@w 15rem/@w 20rem/@w;
+                font-size: 14rem/@w;
+                color: #616161;
+                text-align: left;
+                border-bottom: .5rem/@w solid #e1e1e1;
+                line-height: 24rem/@w;
+            }
+        }
+    }
+    .news {
+        ul {
+            li {
+                border-bottom: .5rem/@w solid #e1e1e1;
+                padding: 20rem/@w 15rem/@w;
+                .pic {
+                    width: 120rem/@w;
+                    height: 80rem/@w;
+                    float: left;
+                }
+                .txt {
+                    float: left;
+                    width: 214rem/@w;
+                    padding-left: 10rem/@w;
+                    p {
+                        font-size: 15rem/@w;
+                        line-height: 21rem/@w;
+                        height: 63rem/@w;
+                        display: -webkit-box;
+                        overflow: hidden;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                    }
+                    div {
+                        height: 20rem/@w;
+                        overflow: hidden;
+                        margin-top: -3rem/@w;
+                        font-size: 12rem/@w;
+                        color: #9b9b9b;
+                        line-height: 17rem/@w;
+                        span {
+                            vertical-align: middle;
+                        }
+                        i {
+                            display: inline-block;
+                            height: 2rem/@w;
+                            width: 2rem/@w;
+                            background: #9b9b9b;
+                            margin: 0 10rem/@w;
+                            vertical-align: middle
+                        }
+                        img {
+                            margin: 5rem/@w;
+                            width: 16rem/@w;
+                            height: 16rem/@w;
+                            display: inline-block;
+                            vertical-align: middle
+                        }
+                    }
+                }
+            }
+            li:last-of-type {
+                height: 40rem/@w;
+                padding: 0;
+                line-height: 40rem/@w;
+                text-align: center;
+                color: #9b9b9b;
+                font-size: 12rem/@w;
+            }
+        }
+        .nonews {
+            div {
+                width: 60rem/@w;
+                height: 66rem/@w;
+                margin: 30rem/@w auto 20rem/@w;
+            }
+            p {
+                font-size: 15rem/@w;
+                color: #9b9b9b;
+                text-align: center;
+                line-height: 21rem/@w;
+            }
+        }
+    }
+}

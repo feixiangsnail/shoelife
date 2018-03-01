@@ -1,0 +1,269 @@
+@import '../../assets/css/preset.less';
+
+#home {
+    //banner
+    width: 375rem/@w;
+    position: relative;
+    .banner {
+        div {
+            width: 375rem/@w;
+            height: 155rem/@w;
+        }
+        .mint-swipe-indicators {
+            width: auto;
+            height: 20rem/@w;
+        }
+        .mint-swipe-indicator {
+            width: 10rem/@w;
+            height: 10rem/@w;
+        }
+        .mint-swipe-indicator{background: #fff;opacity:1;}
+        .mint-swipe-indicators .is-active{background: #F5334A !important;}
+    }
+    //鞋款分类
+    .shoesClass {
+        width: 345rem/@w;
+        margin: 0 auto;
+        padding-top: 10rem/@w;
+        padding-bottom: 20rem/@w;
+        li {
+            float: left;
+            margin-right: 21.5rem/@w;
+            width: 70rem/@w;
+            div {
+                height: 70rem/@w;
+            }
+            p {
+                line-height: 17rem/@w;
+                font-size: 12rem/@w;
+                color: #131313;
+                padding-top: 5rem/@w;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+        li:last-of-type {
+            margin-right: 0;
+        }
+    }
+    //新款上架
+    .newClass {
+        width: 375rem/@w;
+        border-top: 1px solid #e1e1e1;
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 20rem/@w;
+        .shoe-list {
+            width: 375rem/@w;
+            overflow-x: visible;
+            overflow-y: hidden;
+            ul {
+                padding-left: 15rem/@w;
+                width: 1175rem/@w;
+                li {
+                    width: 106rem/@w;
+                    margin-right: 10rem/@w;
+                    float: left;
+                    div {
+                        width: 105rem/@w;
+                        height: 130rem/@w;
+                        border: 1px solid #e1e1e1;
+                    }
+                    p {
+                        font-size: 12rem/@w;
+                        color: #616161;
+                        padding-top: 6rem/@w;
+                        text-align: center;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+    //人气鞋款
+    .popClass {
+        width: 360rem/@w;
+        //border-bottom: 0.5rem/@w solid #e1e1e1;
+        box-shadow: 0 0 1px #e1e1e1;
+        padding-left: 15rem/@w;
+        .popShoe {
+            width: 168rem/@w;
+            height: 120rem/@w;
+            float: left;
+            margin: 15rem/@w 9rem/@w 15rem/@w 0;
+        }
+    }
+    //系列主题
+    .seriesTheme {
+        width: 375rem/@w;
+        .focus-pic {
+            height: 160rem/@w;
+            position: relative;
+            overflow: hidden;
+        }
+       /* .focus-pic:after {
+            content: '';
+            background: #fff;
+            bottom: -8rem/@w;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+            height: 16rem/@w;
+            width: 16rem/@w;
+            position: absolute;
+        }*/
+        .shoe-list {
+            width: 375rem/@w;
+            overflow-x: auto;
+            overflow-y: hidden;
+            border-bottom: 1px solid #e1e1e1;
+
+            ul {
+                padding: 10rem/@w 15rem/@w 30rem/@w;
+                width: 981rem/@w;
+                li {
+                    width: 98rem/@w;
+                    height: 98rem/@w;
+                    background: #F6F6F6;
+                    border: 0.01rem/@w #e1e1e1 solid;
+                    box-shadow: 0 0 1px #e1e1e1;
+                    margin-right: 10rem/@w;
+                    float: left;
+                }
+                li:last-of-type {
+                    margin-right: 0;
+                    color: #131313;
+                    font-size: 12rem/@w;
+                    line-height: 98rem/@w;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    //时尚特辑
+    .featureFashion {
+        width: 375rem/@w;
+        border-bottom: 1px solid #e1e1e1;
+        ul {
+            li {
+                margin: 20rem/@w 15rem/@w 0;
+                padding-bottom: 20rem/@w;;
+                border-bottom: 1px solid #e1e1e1;
+                position: relative;
+                .pic {
+                    width: 131rem/@w;
+                    height: 90rem/@w;
+                }
+                .plate {
+                    position: absolute;
+                    top: 70rem/@w;
+                    left: 143rem/@w;
+                    padding-top: 4rem/@w;
+                    overflow: hidden;
+
+                    height: 22rem/@w;
+                    width: 82rem/@w;
+                    i {
+                        display: block;
+                        height: 16rem/@w;
+                        width: 16rem/@w;
+                        float: left
+                    }
+                    span {
+                        padding-left: 5rem/@w;
+                        color: #9b9b9b;
+                        line-height: 17rem/@w;
+                        font-size: 12rem/@w;
+                        display: block;
+                        float: left;
+                    }
+                }
+                p {
+                    color: #131313;
+                    line-height: 21rem/@w;
+                    position: absolute;
+                    left: 141rem/@w;
+                    top: 0;
+                    font-size: 15rem/@w;
+                }
+            }
+            li:first-of-type {
+                position: relative;
+                margin: 0;
+                padding-bottom: 4rem/@w;
+                border: none;
+                .pic {
+                    width: 375rem/@w;
+                    height: 257rem/@w;
+                }
+                .plate {
+                    top: 15rem/@w;
+                    left: 15rem/@w;
+                    padding-left: 10rem/@w;
+                    border-radius: 4rem/@w;
+                    background: rgba(0, 0, 0, .8);
+                    span {
+                        color: #fff;
+                    }
+                }
+                p {
+                    color: #fff;
+                    position: absolute;
+                    top: auto;
+                    width: 345rem/@w;
+                    left: 0;
+                    bottom: 4rem/@w;
+                    padding: 24rem/@w 15rem/@w 15rem/@w;
+                    line-height: 21rem/@w;
+                    background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.5) 100%);
+                }
+            }
+            li:last-of-type {
+                border: 0
+            }
+        }
+    }
+    //鞋履知识
+    .shoesKnew {
+        h2 {
+            height: 28rem/@w;
+            line-height: 28rem/@w;
+            margin: 20rem/@w 0 10rem/@w 0;
+        }
+        ul {
+            li {
+                border-bottom: 1px solid #e1e1e1;
+                margin: 12rem/@w 15rem/@w 0;
+                position: relative;
+                padding-bottom: 11rem/@w;
+                p {
+                    line-height: 20rem/@w;
+                    font-size: 14rem/@w;
+                    color: #616161;
+                }
+                i {
+                    background: url("../../assets/img/icon-r.png");
+                    display: block;
+                    background-size: 18rem/@w 18rem/@w;
+                    height: 18rem/@w;
+                    width: 18rem/@w;
+                    position: absolute;
+                    right: 0;
+                    top: 2rem/@w;
+                }
+            }
+            li:last-of-type {
+                border: none;
+            }
+        }
+    }
+    h2 {
+        font-size: 20rem/@w;
+        color: #131313;
+        padding-left: 15rem/@w;
+        line-height: 68.5rem/@w;
+        height: 68.5rem/@w;
+        font-weight: bolder;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="wap-font-scale" content="no">
+    <title id="shoeslife_shoe_title_id"></title>
+    <link rel="stylesheet" type="text/css" href="css/css.css"/>
+
+    <link type="text/css" href="css/style.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/lib/jQuery.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.event.drag-1.5.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.touchSlider.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+    <script type="text/javascript" src="js/editor.js"></script>
+    <script type="text/javascript">
+        var shoeId = location_data.id
+    </script>
+</head>
+<body onload="loadShoeData()">
+<!-- 顶部 -->
+<!-- 间距div -->
+<div class="bar_k" id="clok"></div>
+
+<div class="bar" id="clo">
+    <div class="bar_ico fl">
+        <img src="images/logo.svg"></div>
+    <div class="bar_text fl">
+        诠释妳的鞋履美学
+    </div>
+    <div class="bar_close ri" onclick="fn()">
+        <img src="images/cancel.svg">
+    </div>
+    <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.shoelives.android" name="open">
+        <div class="bar_open ri">
+            打开
+        </div>
+    </a>
+</div>
+<!-- banner -->
+<div class="main_visual">
+    <div class="flicking_con" id="shoeslife_shoe_href">
+    </div>
+    <div class="main_image">
+        <ul id='shoeslife_shoe_main'>
+        </ul>
+    </div>
+</div>
+<!-- 标题 -->
+<div class="protitle" id="shoeslife_shoe_title">
+</div>
+<div class="price" id="shoeslife_shoe_price" style="font-family:Arial;">
+</div>
+<div class="introdu">
+    <div class="introdu_img fl">
+        <img src="images/Profilepic.png" id='shoeslife_shoe_designer_photo'>
+    </div>
+    <div class="introdu_t fl">
+        <div class="introdu_na" id='shoeslife_shoe_designer_name'></div>
+        <div class="introdu_te" id='shoeslife_shoe_designer_profile'></div>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="procontent" id='shoeslife_shoe_content'>
+</div>
+<!-- 我要设计-->
+<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.shoelives.android">
+    <div class="profoot">
+        我要设计
+    </div>
+</a>
+<!-- footer -->
+<div class="footer">
+    <div class="footer_text">
+        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.shoelives.android" name="open">打开鞋生活APP，查看更多资讯
+            <img src="images/arrow.svg">
+        </a>
+    </div>
+</div>
+</body>
+
+</html>

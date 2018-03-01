@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>xxxhdpi/icon-无效代金券</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="已经领完" transform="translate(-163.000000, -495.000000)">
+            <g id="icon-无效代金券" transform="translate(163.000000, 495.000000)">
+                <ellipse id="Oval" fill="#FF8F23" cx="25" cy="25" rx="25" ry="25"></ellipse>
+                <path d="M23.0068006,14.5020967 C22.9445764,13.1202268 24.012183,12 25.3931496,12 L25.6068592,12 C26.9870276,12 28.0554197,13.120509 27.9932082,14.5020967 L27.3128167,29.6121784 C27.2710832,30.5389918 26.483338,31.2903226 25.5610683,31.2903226 L25.4389405,31.2903226 C24.5132101,31.2903226 23.7287062,30.5341191 23.6871922,29.6121784 L23.0068006,14.5020967 Z M25.6058707,38 C24.4065518,38 23.4343118,37.0612422 23.4343118,35.9032258 C23.4343118,34.7452094 24.4065518,33.8064516 25.6058707,33.8064516 C26.8051895,33.8064516 27.7774296,34.7452094 27.7774296,35.9032258 C27.7774296,37.0612422 26.8051895,38 25.6058707,38 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

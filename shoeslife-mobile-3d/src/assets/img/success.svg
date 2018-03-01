@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>icon@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="3.我的页面部分修改" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.4订单反馈-已提交状态" transform="translate(-170.000000, -283.000000)">
+            <g id="Alert/One-Button" transform="translate(111.000000, 266.000000)">
+                <g id="icon" transform="translate(59.000000, 17.000000)">
+                    <path d="M18,35 C19.1689129,35 20.3102711,34.8820247 21.4128174,34.6573315 C29.1660476,33.0772632 35,26.2199279 35,18 C35,15.8763319 34.6105962,13.8436139 33.8992961,11.9693535 C31.4659036,5.55741673 25.2651726,1 18,1 C8.61115925,1 1,8.61115925 1,18 C1,27.3888407 8.61115925,35 18,35 Z" id="Oval-2" stroke="#FFFFFF" stroke-width="2"></path>
+                    <path d="M9.67871094,18.1181641 L9.67871094,10.1181641 L7.67871094,10.1181641 L7.67871094,19.1181641 L7.67871094,20.1181641 L28.6787109,20.1181641 L28.6787109,18.1181641 L9.67871094,18.1181641 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(18.178711, 15.118164) rotate(-45.000000) translate(-18.178711, -15.118164) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

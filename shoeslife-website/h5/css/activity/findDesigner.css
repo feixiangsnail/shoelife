@@ -1,0 +1,330 @@
+ img{
+    width:100%;
+    height: 100%;
+    display: block;
+}
+ #findDesigner{width:100%;}
+.header{
+    height:3.12rem;
+    background: #D8C1B1;;
+}
+.header img{
+    height: 2.78rem;
+}
+.des{
+    background: #F6F6F6;
+    height: 1.37rem;
+    overflow-x: visible;
+    position: relative;
+}
+.des .pic{
+    background: transparent;
+    width: 1.43rem;
+    height: 1.42rem;
+    position: absolute;
+    top: -.16rem;
+}
+.des .txt{
+    background: transparent;
+    padding-left: 1.55rem;
+}
+ .des .txt h2{
+     line-height: .30rem;
+     margin-top: .02rem;
+     font-size: .16rem;
+     color:#131313;
+     position: relative;
+     /*background: #131313;*/
+ }
+ .des .txt h2::after{
+     position: absolute;
+     height: .01rem;
+     width:.96rem;
+     background:#131313;
+     content: '';
+     left: 0;
+     bottom: -.01rem;
+ }
+ .des .txt h4{
+     line-height: .20rem;
+     margin-top: .02rem;
+     margin-bottom: .05rem;
+     font-size: .14rem;
+     color:#131313;
+ }
+ .des .txt p{
+     width: 2.2rem;
+     font-size: .14rem;
+     color: #616161;
+ }
+ .module{
+     /*background: salmon;*/
+ }
+ .module .top{
+     position: relative;
+     height: 2.27rem;
+ }
+ .module .top p{
+     /*height: 0.6rem;*/
+     /*width:1.9rem;*/
+     font-size: .14rem;
+     color: #131313;
+     line-height: .30rem;
+     position: absolute;
+     left: .35rem;
+     top:1rem;
+     z-index: 9;
+ }
+ .module .top p::before{
+     content: '';
+     height: .19rem;
+     width:.11rem;
+     position: absolute;
+     background: url("../../images/activity/findDesigner/icon1.png") no-repeat;
+    background-size: .11rem .19rem;
+     top:-.13rem;
+     left:-.06rem;
+ }
+
+ .module .top p::after{
+     content: '';
+     height: .19rem;
+     width:.11rem;
+     position: absolute;
+     background: url("../../images/activity/findDesigner/icon2.png") no-repeat;
+     background-size: .11rem .19rem;
+     bottom:0;
+     right:0;
+ }
+ .module .top p i{
+     display: inline-block;
+     background: url("../../images/activity/findDesigner/cong.png") no-repeat;
+     width: .46rem;
+     height: .44rem;
+     background-size: .46rem .44rem;
+     margin:0 .06rem -.1rem .03rem;
+
+ }
+/* .module .top p:first-letter{
+     font-size: .48rem;
+     font-family: '宋体';
+     padding-right: .08rem;
+ }*/
+ .module .top .pic{
+     position: absolute;
+     right: 0;
+     height: 2.27rem;
+     width:1.88rem;
+     background: #F8E71C;
+ }
+ .module .top img{
+     float: right;
+     width:1.51rem;
+     height: auto;
+ }
+ .module .mid{
+     overflow: visible;
+     height:2.41rem;
+     position: relative;
+ }
+ .module .mid .pic{
+     height: 2.89rem;
+     width:1.88rem;
+     position: absolute;
+     top:-.48rem;
+     z-index: 3;
+ }
+ .module .mid .pic1{
+     height: .89rem;
+     width:2.08rem;
+     position: absolute;
+     right: .10rem;
+     z-index: 5;
+     background: transparent;
+ }
+ .module .mid p{
+     position: absolute;
+     width:1.45rem;
+     height: 1.20rem;
+     font-size: .14rem;
+     color: #131313;
+     line-height: .3rem;
+     top:1.07rem;
+     left: 1.94rem;
+ }
+ .module>p{
+     font-size: .14rem;
+     color: #131313;
+     line-height: .30rem;
+     padding: .20rem .10rem;
+ }
+ .module .video{
+     height: 2.30rem;
+     width:3.55rem;
+     margin: 0 auto .20rem;
+ }
+ .module .video video{
+     height:100%;
+     width:100%;
+     display: block;
+ }
+ .pro{padding-top:.09rem;}
+ .pro .title p{
+     font-size: .16rem;
+     color: #9B9B9B;
+     text-align: center;
+     letter-spacing: 0.026rem;
+     padding-bottom: .04rem;
+ }
+ .pro .title .tit{
+     height: 0.44rem;
+     width:1.64rem;
+     margin: 0 auto;
+     background: url("../../images/activity/findDesigner/title_bg.png") no-repeat center;
+    background-size: 1.64rem 0.44rem;
+     font-size: .24rem;
+     color: #131313;
+     letter-spacing: .0277rem;
+     line-height: 0.38rem;
+     text-align: center;
+     position: relative;
+     z-index: 5;
+ }
+ .pro .item{
+     padding-top: .43rem;
+ }
+ .pro .item .t{
+     padding-bottom: 0.18rem;
+ }
+ .pro .item .t .txt{
+     display: inline-block;
+     margin: 0 .13rem 0 .17rem;
+     height: 1.6rem;
+     width:.64rem;
+     box-sizing: border-box;
+     border: .02rem solid  #D57E00;
+     color: #D57E00;
+     font-size: .24rem;
+     position: relative;
+     overflow: visible;
+ }
+ .pro .item .t .txt span{
+     position: absolute;
+     background: #fff;
+     top:.14rem;
+     left: -.10rem;
+     font-size: .20rem;
+     color: #131313;
+     letter-spacing: 0;
+     line-height: .30rem;
+     height: .6rem;
+     width: .21rem;
+     padding: .02rem 0;
+ }
+ .pro .item .t .txt p{
+     width: .25rem;
+     margin: 0 auto;
+     padding-top: 50px;
+     text-align: center;
+     line-height: .30rem;
+ }
+ .pro .item .t .pic{
+     display: inline-block;
+     width: 2.8rem;
+     height: 1.6rem;
+ }
+ .pro .item .b p{
+     font-size: .14rem;
+     color: #131313;
+     line-height: .30rem;
+     padding: 0 .18rem .18rem .1rem;
+ }
+ .pro .item .b .pic{
+     height: 2.43rem;
+     width:100%
+ }
+
+ .pro .item1 .t .pic{
+     height: 2.13rem;
+ }
+ .pro .item1 .t .txt span{
+    right:-.1rem;
+     left: auto;
+ }
+ .pro .item1 .t .txt{
+     font-size: .23rem;
+     height: 2.13rem;
+     color:#BAD73E;
+     border-color: #BAD73E;
+ }
+
+ .pro1{padding-top: .40rem;}
+ .pro1 .title p{    letter-spacing: 0.02rem;}
+ .pro1 .wrap div{background: transparent}
+ .pro1 .wrap{
+     background: #D8C1B1;
+     padding-top: 0.44rem;
+     margin-top: -.22rem;
+ }
+ .pro1 .wrap .rec .top{
+     overflow: hidden;
+     position: relative;
+     z-index: 5;
+     margin-left: -.25rem;
+ }
+ .pro1 .wrap .rec .top .icon{
+     width: 0.3rem;
+     height:0.26rem;
+     padding: .10rem;
+     background: #D8C1B1;
+ }
+ .pro1 .wrap .rec .top .txt p:first-of-type{
+     font-size: .16rem;
+     color: #0E6DB7;
+     line-height: .19rem;
+     padding-bottom: .06rem;
+ }
+ .pro1 .wrap .rec .top .txt i{
+     width: .13rem;height: .16rem;
+     display: inline-block;
+     padding: 0 .06rem 0 .13rem;
+ }
+ .pro1 .wrap .rec .top .txt span{
+     display: inline-block;
+     vertical-align: top;
+     font-size: .12rem;
+ }
+ .pro1 .wrap .rec .top .txt p:last-of-type{
+     font-size: 14px;
+     color: #131313;
+ }
+.pro1 .wrap .rec{
+    border-left:.01rem solid #0E6DB7 ;
+    margin-left: 0.25rem;
+    position: relative;
+    overflow: visible;
+    box-sizing: border-box;
+}
+ .pro1 .wrap .rec::before{
+     content: '';
+     width: .01rem;
+     height: 100%;
+     background: #0E6DB7;
+     position: absolute;
+     left:0;
+     top:0;
+     transform: translateX(-100%);
+ }
+ .pro1 .wrap .rec .con p{
+     width: 2.95rem;
+     font-size: .14rem;
+     color: #616161;
+     line-height: .20rem;
+     background: rgba(255,255,255,0.50);
+     padding: .1rem;
+     margin: .1rem .10rem .27rem .25rem;
+ }
+
+
+
+

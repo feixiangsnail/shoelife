@@ -1,0 +1,57 @@
+@import '../../../assets/css/preset.less';
+img{width:100%;height:100%;}
+.userDesign {
+  .wrap {
+    width: 345rem/@w;
+    margin: 0 auto;
+      min-height: 100vh;
+    .design-list {
+      li {
+        float: left;
+        height: 145rem/@w;
+        width: 108rem/@w;
+        margin-right: 10rem/@w;
+        background: #F6F6F6;
+        box-shadow: 0 0 0 1rem/@w #e1e1e1;
+        margin-top: 10rem/@w;
+        div {
+          height: 108rem/@w;
+          width: 108rem/@w;
+          box-shadow: 0 0 0 1rem/@w #e1e1e1
+        }
+        p {
+          img {
+            width: 20rem/@w;
+            height: 20rem/@w;
+            margin: 9rem/@w 5rem/@w 0 8rem/@w;
+            float: left;
+              -webkit-border-radius:50%;
+              -moz-border-radius:50%;
+              border-radius:50%;
+          }
+          span {
+              float:left;
+              font-size: 14rem/@w;
+              color: #616161;
+              vertical-align: middle;
+              width: 70rem/@w;
+              height: 17rem/@w;
+              margin-top: 10rem/@w;white-space: nowrap;text-overflow:ellipsis;
+              overflow: hidden;
+          }
+        }
+      }
+      li:nth-of-type(3n) {
+        margin-right: 0;
+      }
+    }
+  }
+    .loadOver{
+        font-size: 13rem/@w;
+        text-align: center;height: 40rem/@w;line-height: 40rem/@w;
+        color:#9b9b9b;
+    }
+    .mint-loadmore-bottom{
+        font-size: 14rem/@w;
+    }
+}
